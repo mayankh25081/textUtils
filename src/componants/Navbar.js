@@ -8,9 +8,7 @@ function Navbar(props) {
       className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          {props.title1}
-        </a>
+          <h4 className="navbar-brand my-3 mx-3">{props.title1}</h4>
         <button
           className="navbar-toggler"
           type="button"
@@ -25,12 +23,12 @@ function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
+              <Link className="nav-link active" aria-current="page" to="/textUtils">
                 {props.title2}
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/textUtils/about">
                 {props.title3}
               </Link>
             </li>

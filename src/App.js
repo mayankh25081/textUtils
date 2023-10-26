@@ -29,9 +29,10 @@ function App() {
   return (
     <Router>
       <Navbar  title1="TextUtils" title2 = "Home" title3 = "About" mode = {mode} toggleMode = {toggleMode}/>
+      
       <Routes>
-          <Route path="/about" element={<About mode = {mode}/>} />
-          <Route path="/" element={<TextForm heading = "Enter Your Text below to analyze" mode = {mode}/>} />
+          <Route path="/textUtils/about" element={<About mode = {mode}/>} />
+          <Route path="/textUtils" element={<TextForm heading = "Enter Your Text below to analyze" mode = {mode}/>} />
       </Routes>
     </Router>
   );
